@@ -16,7 +16,7 @@ const About = (props) => {
               <p>
                 Winnebago County ARES/RACES is a local group of ARES (Amateur Radio Emergency
                 Services) & RACES (Radio Amateur Civil Emergency Services) volunteers, all licensed
-                hams, dedicated to serving the public in time of need. We serve WInnebago County and
+                hams, dedicated to serving the public in time of need. We serve Winnebago County and
                 its local communities.
               </p>
               <p>
