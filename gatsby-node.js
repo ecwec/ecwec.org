@@ -40,6 +40,22 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+            activities: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/activities/" } }
+              sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+              edges {
+                node {
+                  id
+                  frontmatter {
+                    path
+                    title
+                    date(formatString: "DD MMMM YYYY")
+                  }
+                  excerpt
+                }
+              }
+            }
             team: allMarkdownRemark(
               filter: { fileAbsolutePath: { regex: "/team/" } }
               sort: { fields: [frontmatter___date], order: DESC }
@@ -87,6 +103,16 @@ exports.createPages = ({ graphql, actions }) => {
         });
         result.data.about.edges.forEach(({ node }) => {
           const component = path.resolve('src/templates/about.js');
+          createPage({
+            path: node.frontmatter.path,
+            component,
+            context: {
+              id: node.id,
+            },
+          });
+        });
+        result.data.activities.edges.forEach(({ node }) => {
+          const component = path.resolve('src/templates/activity.js');
           createPage({
             path: node.frontmatter.path,
             component,
