@@ -8,10 +8,10 @@ const SubFooter = props => (
         <div className="col-12">
           <div className="sub-footer">
             <ul>
-              <li>
-                <strong>Phone: </strong>
-                {props.data.site.siteMetadata.contact.phone}
-              </li>
+              {/*<li>*/}
+                {/*<strong>Phone: </strong>*/}
+                {/*{props.data.site.siteMetadata.contact.phone}*/}
+              {/*</li>*/}
               <li>
                 <strong>Email: </strong>
 {' '}
@@ -20,11 +20,11 @@ const SubFooter = props => (
                 </a>
               </li>
             </ul>
-            <ul>
-              <li>
-                <a href="https://www.zerostatic.io">www.zerostatic.io</a>
-              </li>
-            </ul>
+            {/*<ul>*/}
+              {/*<li>*/}
+                {/*<a href="https://www.zerostatic.io">www.zerostatic.io</a>*/}
+              {/*</li>*/}
+            {/*</ul>*/}
           </div>
         </div>
       </div>

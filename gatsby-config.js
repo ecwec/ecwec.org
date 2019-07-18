@@ -2,24 +2,24 @@ const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Serif',
-    description: 'my theme',
+    title: 'East Central Wisconsin Emergency Communications',
+    description: 'East Central Wisconsin Emergency Communications is the non-profit entity behind Winnebago County ARES/RACES.',
     contact: {
       phone: 'XXX XXX XXX',
-      email: 'zerostaticthemes@gmail.com',
+      email: 'info@ecwec.org',
     },
     menuLinks: [
       {
-        name: 'Services',
-        link: '/services',
+        name: 'About Us',
+        link: '/about-us',
       },
       {
-        name: 'Team',
-        link: '/team',
+        name: 'Activities',
+        link: '/activities',
       },
       {
-        name: 'Testimonials',
-        link: '/testimonials',
+        name: 'Join',
+        link: '/join',
       },
       {
         name: 'Contact',

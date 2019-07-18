@@ -3,33 +3,33 @@ import { graphql, withPrefix, Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
-import Call from '../components/Call';
 
 const Home = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
   return (
     <Layout bodyClass="page-home">
-      <SEO title="Home" />
+      <SEO title="Home - Winnebago County ARES/RACES" />
       <Helmet>
         <meta
           name="description"
-          content="Small Business Theme. Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This is a beautiful and artfully designed starting theme."
+          content="Winnebago County ARES/RACES is an amateur radio public service organization based in Winnebago County, Wisconsin, and is open to all licensed amateur radio operators. ECWEC is the non-profit entity associated with Winnebago county ARES/RACES."
         />
       </Helmet>
       <div className="intro pb-4">
         <div className="container">
-          <h1>Serif - Gatsby Small Business Theme.</h1>
+          <h1>Winnebago County ARES/RACES</h1>
           <p>
-            Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This
-            is a beautiful and artfully designed starting theme.
+            Winnebago County ARES/RACES is an amateur radio public service organization based in
+            Winnebago County, Wisconsin, and is open to all licensed amateur radio operators. ECWEC
+            is the non-profit entity associated with Winnebago county ARES/RACES.
           </p>
         </div>
       </div>
 
-      <div className="container pt-2">
-        <Call button />
-      </div>
+      {/*<div className="container pt-2">*/}
+        {/*<Call button />*/}
+      {/*</div>*/}
 
       <div className="container pt-8 pt-md-10">
         <div className="row justify-content-start">
